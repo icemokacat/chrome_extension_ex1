@@ -1,0 +1,58 @@
+.option-box{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: white;
+    box-shadow: 0 0 0 2px white,
+                0 0 0 4px black;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 500px;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: white;
+    box-shadow: 0 0 0 2px white,
+                0 0 0 4px black;
+}
+
+li button{
+    height: 30px;
+    width: 30px;
+    outline: none;
+    margin: 10px;
+    border: none;
+    border-radius: 2px;
+}
+.flex-row-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    min-height: 40px;
+    min-width: 280px;
+}
+.textList{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    min-height: 40px;
+    min-width: 280px;
+}

@@ -5,7 +5,20 @@
     <link rel="stylesheet" href="button.css">
 </head>
 <body>
-<button id="changeColor"></button>
-<script src="popup.js"></script>
+    <!-- 1. 차단할 도메인의 확장자 설정  -->
+    <div id="extensionList">
+        <p>차단할 도메인의 확장자 설정</p>
+        <input type="text" id="extension" placeholder="ex) .com, .net, .org">
+        <button id="addExtension">추가</button>
+    </div>
+
+    <!-- 2. 차단할 도메인 설정 -->
+    <div id="domainList">
+        <p>차단할 도메인 설정</p>
+        <input type="text" id="domain" placeholder="ex) google, naver, daum">
+        <button id="addDomain">추가</button>
+    </div>
+
+    <script src="options.js"></script>
 </body>
 </html>

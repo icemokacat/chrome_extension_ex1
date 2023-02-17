@@ -2,13 +2,51 @@
 <html lang=en>
 <meta charset=utf-8>
 <head>
-    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="option.css">
 </head>
 <body>
-<div id="buttonDiv"></div>
-<div>
-    <p>배경색 변경</p>
-</div>
+
+    <h1>
+        google chrome extension - Block Site Option
+    </h1>
+
+    <!-- 1. 차단할 도메인의 확장자 설정  -->
+    <div class="option-box">
+        <p>차단할 도메인의 확장자 설정</p>
+
+        <div class="flex-row-wrapper">
+            <input type="text" id="extension" placeholder="ex) .com, .net, .org">
+            <button id="addExtension">추가</button>
+        </div>
+
+        <p>현재 설정된 차단한 도메인의 확장자</p>
+        <ul id="extensionList"></ul>
+    </div>
+
+    <!-- 2. 차단할 도메인 설정 -->
+    <div class="option-box">
+        <p>차단할 도메인 설정</p>
+
+        <div class="flex-row-wrapper">
+            <input type="text" id="domain" placeholder="ex) google, naver, daum">
+            <button id="addDomain">추가</button>
+        </div>
+
+        <p>현재 설정된 차단한 도메인 네임</p>
+        <ul id="domainList"></ul>
+    </div>
+
+    <!-- 3. blacklist 관리 -->
+    <div class="option-box">
+        <!-- 3.1 현재까지 차단된 사이트 목록 -->
+        <p>현재까지 차단된 사이트 목록</p>
+        <ul class="textList" id="blacklist"></ul>
+
+        <!-- 3.2 white 리스트 목록 -->
+        <p>white 리스트 목록</p>
+        <ul class="textList" id="whitelist"></ul>
+    </div>
+
+    <script src="options.js"></script>
 </body>
-<script src="options.js"></script>
 </html>
